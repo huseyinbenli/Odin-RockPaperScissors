@@ -54,11 +54,9 @@ function playGame() {
   if (humanScore < 5 && computerScore < 5) {
     playRound();
     playGame();
-  }
-  if (humanScore === 5) {
+  } else if (humanScore === 5) {
     console.log("Congratulations! You win the game!");
-  }
-  if (computerScore === 5) {
+  } else if (computerScore === 5) {
     console.log("Computer wins the game! Better luck next time!");
   }
 }
